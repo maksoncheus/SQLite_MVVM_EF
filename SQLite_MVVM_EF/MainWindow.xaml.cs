@@ -23,6 +23,7 @@ namespace SQLite_MVVM_EF
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new ApplicationViewModel();
         }
     }
 }
