@@ -21,5 +21,10 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="Добавить" Command="{Binding AddCommand}" Margin="10"/>
+            <Button Content="Изменить" Command="{Binding EditCommand}" CommandParameter="{Binding ElementName=usersList, Path=SelectedItem}" Margin="10"/>
+            <Button Content="Удалить" Command ="{Binding DeleteCommand}" CommandParameter="{Binding ElementName=usersList, Path=SelectedItem}" Margin="10"/>
+        </StackPanel>
     </Grid>
 </Window>

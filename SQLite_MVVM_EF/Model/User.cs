@@ -8,7 +8,7 @@ using System.Runtime.CompilerServices;
 
 namespace SQLite_MVVM_EF
 {
-    internal class User : NotifyPropertyBase 
+    public class User : NotifyPropertyBase 
     {
         private string? _name;
         private int _age;

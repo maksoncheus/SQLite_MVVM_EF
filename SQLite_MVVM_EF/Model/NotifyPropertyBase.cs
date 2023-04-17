@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SQLite_MVVM_EF
 {
-    internal class NotifyPropertyBase : INotifyPropertyChanged
+    public class NotifyPropertyBase : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler? PropertyChanged;
 
